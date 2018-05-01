@@ -14,6 +14,10 @@ private:
 public:
     Box(double len = 1, double w = 1, double h = 1);
     double getVolume() const;
+    bool operator<(const Box& rhs) const;
+    bool operator==(const Box& rhs) const;
+    bool operator>(const Box& rhs) const;
+    Box operator+(const Box& rhs) const;
 };
 
 
